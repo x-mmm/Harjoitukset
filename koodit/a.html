@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project #2</title>
+</head>
+<body>
+    <span id="link"></span>
+    <script>
+       var url = prompt("Enter a URL");
+
+       if(url.substr(0, 4) == "http"){
+       } else {
+           url = "http://" + url
+       }
+       var spanNode = document.getElementById("link");
+       var html = "<a href'" + url + "'>" + url +"</a>";
+       spanNode.innerHTML = html;
+       
+    </script>
+</body>
+</html>
