@@ -109,6 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
       
+    //jos nykyisen neliösi alapuolella oleva neliö on otettu, voit mennä sen päälle
+      
       if (squares[i + 7].classList.contains('taken') &&!squares[i].classList.contains('taken')) {
         if (currentPlayer == 1) {
           squares[i].classList.add('taken')
