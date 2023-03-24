@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perjantai juttu</title>
+</head>
+<body>
+    <label for="number-input">Enter a number:</label>
+    <input type="text" name="number-input" id="number-input">
+    <button onclick="checkNumber ()">Submit</button>
+    <p id="output-text"></p>
+    <script>
+        function checkNumber(){
+            let userInput = document.getElementById("number-input").value;
+
+            let userNumber = Number(userInput);
+
+            if (isNaN(userNumber)){
+                document.getElementById("output-text").innerHTML = "Invalid input. Please enter a valid number.";
+            } else {
+                if (userNumber > 18) {
+                    document.getElementById("output-text").innerHTML = "You are over 18!";
+                } else {
+                    document.getElementById("output-text").innerHTML = "You are under 18."
+                }
+            }
+        }
+    </script>
+</body>
+</html>
