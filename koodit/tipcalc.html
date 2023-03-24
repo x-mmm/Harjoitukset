@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tipcalc.js"></script>
+</head>
+<body>
+    <form>
+        <label for="bill_amount">Bill Amount:</label>
+        <input type="number" id="bill_amount" name="bill_amount" required>
+
+        <label for="tip_percentage">Tip Percentage</label>
+        <input type="number" id="tip_percentage" name="tip_percentage">
+
+        <button type="button" onclick="calculateTip()">Calculate Tip</button>
+    </form>
+
+    <p>Total Amount: <span id=total_amount></span></p>
+</body>
+</html>
