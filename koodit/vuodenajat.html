@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuodenajat</title>
+</head>
+<body>
+    <h1>Kuukauden analyysi</h1>
+    <p>Kirjoita syntymä kuukautesi (esim. tammikuu, helmikuu jne.)</p>
+    <input type="text" id="syntymakuukausi">
+    <button onclick="analysoikuukausi()">Analysoi</button>
+    <p id="tulos"></p>
+    
+    <script>
+        function analysoikuukausi() {
+            var kuukausi = document.getElementById("syntymakuukausi").value.toLowerCase();
+            var tulos = document.getElementById("tulos")
+
+            if (kuukausi === "joulukuu" || kuukausi === "tammikuu" || kuukausi === "helmikuu") {
+                    tulos.innerHTML = "Olet syntynyt talvella!"
+            }
+            if (kuukausi === "maaliskuu" || kuukausi === "huhtikuu" || kuukausi === "toukokuu") {
+                    tulos.innerHTML = "Olet syntynt keväällä!"
+            }
+            if (kuukausi === "kesäkuu" || kuukausi === "heinäkuu" || kuukausi === "elokuu") {
+                    tulos.innerHTML = "Olet syntynyt kesällä!"
+            }
+            if (kuukausi === "syyskuu" || kuukausi === "lokakuu" || kuukausi === "marraskuu") {
+                    tulos.innerHTML = "Olet syntynyt syksyllä!"
+            }
+        } 
+
+    </script>
+</body>
+</html>

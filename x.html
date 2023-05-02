@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      // FOR LOOP
+      //for(var i=0; i < 10; i++){
+      //  console.log(i)
+      var words =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit metus viverra orci tristique, at mollis sem posuere. Donec sodales nulla porta quam viverra, eget mollis sem fermentum. Maecenas imperdiet volutpat justo vel tristique. Praesent sollicitudin non nisi vitae blandit. Proin mattis justo maximus egestas efficitur. Suspendisse maximus ex finibus".split(
+          " "
+        );
+
+      //var names = ["Kalob", "Nathan", "Zephyr", "Henry"];
+      //function toEmailAddress(name) {
+      //return name.toLowerCase() + "@gmail.com";
+
+      //i = interval
+
+      for (var i = 0; i < words.length; i++) {
+        var currentEmail = words[i].toLowerCase() + "gmail.com";
+        if(i % 2 == 0) {
+          continue;
+        }
+       /* if (i == 10) {
+          break;
+        }*/
+        console.log(i, currentEmail);
+      }
+      //for (let index = 0; index < array.lenght; index++){
+      //const element = array[index];
+    </script>
+  </body>
+</html>
