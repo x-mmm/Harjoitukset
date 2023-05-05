@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*var arr = ["Kalob", "Nathan", "Zephry", "Prairie", "Henry", "Veto", "Maya"]
+        let [kalob, nathan, zephyr, ...rest] = arr
+        console.log(rest)*/
+
+        const person = {
+            "first_name_for_the_user": "DEFINETLY NOT KALOB",
+            'age': 30,
+            'cats': 2,
+            'food': 'pizza',
+        }
+        let{
+            first_name_for_the_user: firstName,
+            // key: newVarNameIs
+            food: favouriteFood
+        } = person
+        console.log("Name is ", firstName)
+        console.log("Food is ", food)
+
+    </script>
+</body>
+
+</html>
