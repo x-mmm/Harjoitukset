@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript-vertailu</title>
+  <script>
+    function vertaaArvoa() {
+      // Käyttäjän syöttämä arvo
+      var kayttajanSyote = parseInt(document.getElementById("kayttajanSyote").value);
+
+      // Vertailtava muuttuja
+      var toinenMuuttuja = 5;
+
+      // Vertailu if-else-lauseen avulla
+      if (kayttajanSyote > toinenMuuttuja) {
+        document.getElementById("tulos").innerHTML = "Käyttäjän syöttämä arvo on suurempi kuin toinen muuttuja.";
+      } else {
+        document.getElementById("tulos").innerHTML = "Käyttäjän syöttämä arvo ei ole suurempi kuin toinen muuttuja.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript-vertailu</h1>
+  <label for="kayttajanSyote">Syötä arvo:</label>
+  <input type="number" id="kayttajanSyote">
+  <button onclick="vertaaArvoa()">Vertaa</button>
+  <p id="tulos"></p>
+</body>
+</html>
